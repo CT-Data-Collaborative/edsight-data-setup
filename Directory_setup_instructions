@@ -1,0 +1,72 @@
+Step 1:
+Clone github repo with all EdSight data to local directory, add all files to a "Raw_from_GitHub" directory.
+	~/Desktop/Data/EdSight/District/Raw_from_GitHub
+
+Step 2:
+Write mkdir script to create corresponding folders at same level as "Raw_from_GitHub" folder to house raw EdSight data:
+	~/Desktop/Data/EdSight/District/mkdir.sh
+
+Step 3: 
+Run upload_raw.R script to copy files from EdSight folder to indiv dataset raw folders
+	~/Desktop/Data/EdSight/District/upload_raw.R
+
+Step 4:
+Determine which datasets need to be separated out into categories. Clone ctdata-dataset-cookiecutter repo to local dataset directory:
+	~/Desktop/Data/EdSight/District/Chronic-Absenteeism/ctdata-dataset-cookiecutter
+Write individual cookiecutter.json files for each individal category:
+	Example: ~/Desktop/Data/EdSight/District/Chronic-Absenteeism/ctdata-dataset-cookiecutter/cookiecutter.json
+	Chronic Absenteeism
+		Chronic-Absenteeism-by-Grade
+		Chronic-Absenteeism-by-Gender
+		Chronic-Absenteeism-by-Race-Ethnicity
+		Chronic-Absenteeism-by-Special-Education-Status
+		Chronic-Absenteeism-by-Meal-Eligibility
+		Chronic-Absenteeism-by-ELL
+		Chronic-Absenteeism-by-All-Students
+	CMT-CAPT-Science
+		CMT-CAPT-Science-by-Gender
+		CMT-CAPT-Science-by-Race-Ethnicity
+		CMT-CAPT-Science-by-Special-Education-Status
+		CMT-CAPT-Science-by-Meal-Eligibility-Lvl-2
+		CMT-CAPT-Science-by-Meal-Eligibility-Lvl-3
+		CMT-CAPT-Science-by-ELL
+		CMT-CAPT-Science-by-All-Students
+		CMT-CAPT-Science-by-High-Needs
+	College-Entrance-and-Persistence
+		College-Entrance-and-Persistence-by-Gender
+		College-Entrance-and-Persistence-by-Race-Ethnicity
+		College-Entrance-and-Persistence-by-Special-Education-Status
+		College-Entrance-and-Persistence-by-Meal-Eligibility
+		College-Entrance-and-Persistence-by-ELL
+		College-Entrance-and-Persistence-by-All-Students
+	Student-Enrollment
+		Student-Enrollment-by-Gender
+		Student-Enrollment-by-Race-Ethnicity
+		Student-Enrollment-by-Special-Education-Status
+		Student-Enrollment-by-Meal-Eligibility
+		Student-Enrollment-by-ELL
+		Student-Enrollment-by-All-Students
+	Five-Year-Grad-Rates
+		Five-Year-Grad-Rates-by-Gender
+		Five-Year-Grad-Rates-by-Race-Ethnicity
+		Five-Year-Grad-Rates-by-Special-Education-Status
+		Five-Year-Grad-Rates-by-Meal-Eligibility
+		Five-Year-Grad-Rates-by-ELL
+		Five-Year-Grad-Rates-by-All-Students
+		Five-Year-Grad-Rates-by-High-Needs
+	Four-Year-Grad-Rates
+		Four-Year-Grad-Rates-by-Gender
+		Four-Year-Grad-Rates-by-Race-Ethnicity
+		Four-Year-Grad-Rates-by-Special-Education-Status
+		Four-Year-Grad-Rates-by-Meal-Eligibility
+		Four-Year-Grad-Rates-by-ELL
+		Four-Year-Grad-Rates-by-All-Students
+		Four-Year-Grad-Rates-by-High-Needs
+	Suspension-Rates
+		Suspension-Rates-by-Gender
+		Suspension-Rates-by-Race-Ethnicity
+		Suspension-Rates-by-Special-Education-Status
+		Suspension-Rates-by-Meal-Eligibility
+		Suspension-Rates-by-ELL
+		Suspension-Rates-by-All-Students
+
