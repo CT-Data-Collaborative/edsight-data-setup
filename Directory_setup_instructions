@@ -40,6 +40,7 @@ Write individual cookiecutter.json files for each individal category:
 		College-Entrance-and-Persistence-by-ELL
 		College-Entrance-and-Persistence-by-All-Students
 	Student-Enrollment
+		Student-Enrollment-by-Grade
 		Student-Enrollment-by-Gender
 		Student-Enrollment-by-Race-Ethnicity
 		Student-Enrollment-by-Special-Education-Status
@@ -69,4 +70,15 @@ Write individual cookiecutter.json files for each individal category:
 		Suspension-Rates-by-Meal-Eligibility
 		Suspension-Rates-by-ELL
 		Suspension-Rates-by-All-Students
+Run clone.sh
+
+Execute all cookiecutter.json files individually, to create all DPs for all categories
+		cd to first data set (ex: cd CMT-CAPT-Science/)
+		copy first cookiecutter entries into local copy of cookiecutter.json file
+		run: cookiecutter ctdata-dataset-cookiecutter
+		cycle through all entries
+		First data set category should be created in top level directory
+		Now, copy second, third...categories, one by one and repeat process until all category DPs are created
+		
+
 
