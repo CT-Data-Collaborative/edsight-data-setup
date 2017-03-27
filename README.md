@@ -17,3 +17,4 @@
 * move_raw_SE.R  - R script to move Student Enrollment data into respective category repositories
 * move_raw_SR.R - R script to move Suspension Rate data into respective category repositories
 * upload_raw.R - R script to move all EdSight data sets into respective data set repositories
+* Master_List_EdSight_Datasets.txt - Master List of all EdSight Datasets (includes dis-aggregated lists)
